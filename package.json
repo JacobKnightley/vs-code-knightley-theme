@@ -1,0 +1,34 @@
+{
+    "name": "knightley-theme",
+    "displayName": "Knightley Theme",
+    "description": "A custom dark theme based on Dark+ with additional customizations.",
+    "version": "1.0.0",
+    "publisher": "JacobKnightley",
+    "engines": {
+        "vscode": "^1.70.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Knightley Theme",
+                "uiTheme": "vs-dark",
+                "path": "./themes/knightley-theme.json"
+            },
+            {
+                "label": "Base Theme",
+                "uiTheme": "vs-dark",
+                "path": "./themes/base-theme.json"
+            }
+        ]
+    },
+    "scripts": {
+        "package": "vsce package",
+        "publish": "vsce publish"
+    },
+    "devDependencies": {
+        "vsce": "^2.10.0"
+    }
+}
